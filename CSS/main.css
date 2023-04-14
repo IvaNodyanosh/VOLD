@@ -171,7 +171,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    margin-top: 40px;
     font-size: 36px;
     text-align: start;
   }
@@ -267,8 +266,15 @@ a {
     margin-top: 60px;
   }
 }
-.hero__box {
-  width: 510px;
+@media screen and (min-width: 768px) {
+  .hero__box {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__box {
+    width: 510px;
+  }
 }
 .hero__box-img {
   display: none;
@@ -286,7 +292,8 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .hero__img-big {
-    width: 250px;
+    width: 270px;
+    margin-top: 30px;
   }
 }
 .hero__img-small {
