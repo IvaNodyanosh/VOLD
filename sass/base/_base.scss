@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, san-serif;
+    background-color: #0B0E11;
+    color: #D4D4D4;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {text-decoration: none;}
+
+.container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 624px) {
+    .container {
+        max-width: 625px;
+        padding-left: 87px;
+        padding-right: 87px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 984px) {
+    .container {
+        max-width: 984px;
+        padding-left: 123px;
+        padding-right: 123px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+}
+
+@mixin animation($property) {
+    transition-duration: 250ms;
+    transition-property: $property;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
