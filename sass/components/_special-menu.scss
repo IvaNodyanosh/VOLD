@@ -1,0 +1,55 @@
+.special-menu {
+
+    position: relative;
+
+
+    &__list {
+        width: 440px;
+        padding: 50px 40px;
+        background-color: var(--text-color);
+        height: auto;
+        box-shadow: var(--box-shadow);
+        position: absolute;
+        top: 160px;
+        left: 140px;
+    }
+
+
+    &__box {
+
+        display: flex;
+        align-items: baseline;
+
+        &::after {
+
+            content: '';
+            border-bottom: 1px dashed #E3C08D;
+            margin: 0 10px 0 10px;
+            flex-grow: 1;
+            order: 2;
+            display: flex;
+
+
+        }
+    }
+
+
+    &__title {
+
+        order: 1;
+    }
+
+    &__price {
+
+        order: 3;
+    }
+
+
+    &__photo {
+
+        margin-left: auto;
+
+        width: 815px;
+    }
+
+}
