@@ -968,7 +968,17 @@ img, svg {
   .footer__address {
     margin-left: auto;
     margin-right: 0;
-    margin-top: 35px;
+    margin-top: 15px;
+  }
+}
+.footer__address-list {
+  width: 280px;
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .footer__address-list {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .footer__address-text {
@@ -976,6 +986,11 @@ img, svg {
   font-size: 18px;
   line-height: 1.9;
   font-style: normal;
+  position: absolute;
+  right: calc(100% + 12px);
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   color: #FFFFFF;
 }
 .footer__address-link {

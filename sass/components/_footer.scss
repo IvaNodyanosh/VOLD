@@ -103,7 +103,17 @@
         @include mq(tab){
             margin-left: auto;
             margin-right: 0;
-            margin-top: 35px;
+            margin-top: 15px;
+        }
+
+        &-list{
+            width: 280px;
+            margin-left: 25px;
+
+            @include mq(mob-max){
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
 
@@ -112,6 +122,9 @@
             font-size: 18px;
             line-height: 1.9;
             font-style: normal;
+            position: absolute;
+            right: calc(100% + 12px);
+            justify-content: baseline;
         
         
             color: #FFFFFF;
