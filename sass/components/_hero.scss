@@ -235,7 +235,7 @@
         display: block;
         position: relative;
         width: 436px;
-        clip-path: polygon(84px 0, 100% 0, 100% 100%, 0 100%, 0 84px);
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
         border: 3px solid rgba(227, 192, 141, 0.2);
 
         @include mq(tab-max){
@@ -250,7 +250,7 @@
         top: 275px;
         right: 300px;
         width: 245px;
-        clip-path: polygon(0 0, calc(100% - 51px) 0, 100% 51px, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
         border: 3px solid rgba(227, 192, 141, 0.2);
     
 
