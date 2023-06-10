@@ -143,6 +143,7 @@ img, svg {
   padding-top: 50px;
   padding-bottom: 100px;
   color: var(--color-text);
+  cursor: pointer;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: color;
@@ -691,6 +692,7 @@ img, svg {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .special-dish__caption {
     font-size: 17px;
+    height: 51px;
   }
 }
 .special-dish__set {
@@ -750,10 +752,15 @@ img, svg {
     z-index: 1;
   }
 }
+@media screen and (min-width: 1200px) {
+  .special-menu__list {
+    width: 550px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .special-menu__list {
     padding: 30px 20px;
-    top: 210px;
+    top: 170px;
   }
 }
 .special-menu__item:not(:last-child) {
@@ -825,14 +832,8 @@ img, svg {
     font-size: 17px;
   }
 }
-.special-menu__photo {
-  margin-left: auto;
-  width: 815px;
-  -webkit-clip-path: polygon(0 0, calc(100% - 80px) 0, 100% 80px, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, calc(100% - 80px) 0, 100% 80px, 100% 100%, 0 100%);
-}
 @media screen and (max-width: 768px) {
-  .special-menu__photo {
+  .special-menu__list-photo {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -845,6 +846,26 @@ img, svg {
             clip-path: inset(50%);
     margin: -1px;
   }
+}
+.special-menu__photo {
+  margin-left: auto;
+  width: 815px;
+}
+.special-menu__photo--first {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), calc(100% - 100px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), calc(100% - 100px) 100%, 0 100%);
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .special-menu__photo--first {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+}
+.special-menu__photo--second {
+  -webkit-clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 100px, 100% 100%, 0 100%);
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .special-menu__photo {
@@ -912,6 +933,11 @@ img, svg {
   .footer__text {
     text-align: start;
     width: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    width: 400px;
   }
 }
 .footer__social-list {
@@ -998,6 +1024,12 @@ img, svg {
   font-size: 16px;
   line-height: 2.1;
   font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   color: #A1A1A1;
   position: relative;
 }/*# sourceMappingURL=main.css.map */
