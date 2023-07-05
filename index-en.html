@@ -21,7 +21,17 @@
         <div class="container header">
             <a href="./index-en.html" class="header__logo" id="logo">DANLAR</a>
         
-            <a href="./index.html" class="header__language">English</a>
+            <nav>
+                <div class="nav__language-box">
+                    <button type="button" class="nav__button">Language</button>
+                    <ul class="nav__list-language">
+                    <li class="nav__item-language"><a href="./index-en.html"
+                            class="nav__link-language nav__link-language--current">English</a></li>
+                    <li class="nav__item-language"><a href="./index.html" class="nav__link-language">Česká</a></li>
+                    <li class="nav__item-language"><a href="./index-ua.html" class="nav__link-language">Українська</a></li>
+                </ul>
+                </div>
+            </nav>
         </div>
 
     </header>
@@ -295,19 +305,19 @@
             invite you to go and subscribe to our social networks.
             </p>
             <ul class="footer__social-list">
-                <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px" height="40px"
+                <Li class="footer__social-item"><a href="https://www.facebook.com/danlar.cz" class="footer__social-link" target="_blank"><svg width="40px" height="40px"
                             class="footer__icon">
                             <use href="./img/symbol-defs.svg#facebook"></use>
                         </svg></a></Li>
-                <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px" height="40px"
+                <Li class="footer__social-item"><a href="" class="footer__social-link" target="_blank"><svg width="40px" height="40px"
                             class="footer__icon">
                             <use href="./img/symbol-defs.svg#twitter"></use>
                         </svg></a></Li>
-                <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px" height="40px"
+                <Li class="footer__social-item"><a href="https://www.instagram.com/danlar.cz" class="footer__social-link" target="_blank"><svg width="40px" height="40px"
                             class="footer__icon">
                             <use href="./img/symbol-defs.svg#instagram"></use>
                         </svg></a></Li>
-                <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px" height="40px"
+                <Li class="footer__social-item"><a href="" class="footer__social-link" target="_blank"><svg width="40px" height="40px"
                             class="footer__icon">
                             <use href="./img/symbol-defs.svg#youtube"></use>
                         </svg></a></Li>
@@ -315,7 +325,8 @@
             <div class="footer__address"><h2 class="footer__title">Find Us</h2>
             <address>
                 <ul class="footer__address-list">
-                    <li class="footer__address-item"><a href="https://www.google.com/maps/place/Restaurace+DANLAR/@51.3647365,7.0081306,7z/data=!4m10!1m2!2m1!1sdanlar!3m6!1s0x47093f2db58b5997:0x1e94c5dc0636892c!8m2!3d50.7723456!4d14.7632315!15sCgZkYW5sYXKSAQpyZXN0YXVyYW504AEA!16s%2Fg%2F11kp_w0sbn?entry=ttu" class="footer__address-link" target="_blank"><span class="footer__address-text">L.</span> Jablonne v Podjestedi 195, 471 25 Jablonne v Podjestedi</a></li>
+                    <li class="footer__address-item"><a href="https://www.google.com/maps/place/Restaurace+DANLAR/@51.3647365,7.0081306,7z/data=!4m10!1m2!2m1!1sdanlar!3m6!1s0x47093f2db58b5997:0x1e94c5dc0636892c!8m2!3d50.7723456!4d14.7632315!15sCgZkYW5sYXKSAQpyZXN0YXVyYW504AEA!16s%2Fg%2F11kp_w0sbn?entry=ttu" class="footer__address-link" target="_blank"><span class="footer__address-text">L.</span> Jablonné v Podještědí 195, 471 25
+                    Jablonné v Podještědí</a></li>
                     <li class="footer__address-item"><a href="tel:+420722908422" class="footer__address-link"><span class="footer__address-text">P.</span> +420 722 908 422</a></li>
                     <li class="footer__address-item"><a href="tel:+420776123492" class="footer__address-link"><span
                                 class="footer__address-text">P.</span> +420 776 123 492</a></li>
@@ -326,6 +337,7 @@
 </div></div>
     </footer>
 
+    <script defer src="./js/script-language.js"></script>
 
 
 </body>

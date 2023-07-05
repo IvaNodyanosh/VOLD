@@ -24,7 +24,17 @@
         <div class="container header">
             <a href="./index.html" class="header__logo" id="logo">DANLAR</a>
 
-            <a href="./index-en.html" class="header__language">Čeština</a>
+            <nav>
+                <div class="nav__language-box">
+                    <button type="button" class="nav__button">Jazyk</button>
+                    <ul class="nav__list-language">
+                        <li class="nav__item-language"><a href="./index.html"
+                                class="nav__link-language nav__link-language--current">Česká</a></li>
+                        <li class="nav__item-language"><a href="./index-ua.html" class="nav__link-language">Українська</a></li>
+                        <li class="nav__item-language"><a href="./index-en.html" class="nav__link-language">English</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
     </header>
@@ -159,7 +169,7 @@
 
                             <ul class="special-dish__set">
                                 <li class="special-dish-set__item">Smažené brambory,</li>
-                                <li class="special-dish-set__item">Vepřový kebab, sýr,</li>
+                                <li class="special-dish-set__item">Vepřový šašlik, sýr,</li>
                                 <li class="special-dish-set__item">Salát z čerstvé zeleniny</li>
 
                             </ul>
@@ -238,7 +248,7 @@
                     </li>
                     <li class="special-menu__item">
                         <div class="special-menu__box">
-                            <h4 class="special-menu__title">Vepřový kebab</h4>
+                            <h4 class="special-menu__title">Vepřový šašlik</h4>
                             <p class="special-menu__price">CZK 90</p>
 
                         </div>
@@ -361,6 +371,7 @@
     </footer>
 
 
+    <script defer src="./js/script-language.js"></script>
 
 </body>
 

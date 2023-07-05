@@ -1,12 +1,384 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DANLAR Ukraine cuisine</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./CSS/main.min.css">
 </head>
+
 <body>
-    
+
+
+    <!-- Cекція header -->
+    <header>
+        <div class="container header">
+            <a href="./index.html" class="header__logo" id="logo">DANLAR</a>
+
+            <nav>
+                <div class="nav__language-box">
+                    <button type="button" class="nav__button">Мова</button>
+                    <ul class="nav__list-language">
+                        <li class="nav__item-language"><a href="./index-ua.html"
+                                class="nav__link-language nav__link-language--current">Українська</a></li>
+                        <li class="nav__item-language"><a href="./index.html"
+                                class="nav__link-language">Česká</a></li>
+                        <li class="nav__item-language"><a href="./index-en.html" class="nav__link-language">English</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Секція hero -->
+        <section>
+            <div class="hero container">
+                <div class="hero__box">
+                    <h3 class="hero__title">Вітаємо в Danlar</h3>
+                    <h1 class="hero__header">Автентичний ресторан & кафе</h1>
+                    <p class="hero__text">Домашня атмосфера та смачні страви нашого закладу змусять Вас повертатися до нас знову і знову</p>
+                    <a class="hero__link phantom" href="./index-ua.html">VIEW MORE</a>
+                </div>
+                <div class="hero__box-img">
+                    <img src="./img/hero-big-img.jpg" alt="photo hero" class="hero__img-big">
+                    <img src="./img/hero-min-img.jpg" alt="photo hero" class="hero__img-small">
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!-- Cекція hero -->
+
+
+        <section>
+
+            <div class="discover container">
+                <h3 class="discover__title">Відкрийте для себе</h3>
+                <h2 class="discover__header">Нашу спеціалізовану кухню</h2>
+
+                <ul class="discover__list">
+                    <li class="discover__item">
+                        <svg class="discover__icon" width="60px" height="60px">
+                            <use href="./img/symbol-defs.svg#ukraine"></use>
+                        </svg>
+                        <div class="discover__box">
+                            <h4 class="discover__caption">Українська кухня</h4>
+                            <p class="discover__text">Різноманітні, смачні страви, такі як борщі, вареники та ситні м’ясні страви зі свіжих продуктів.</p>
+                        </div>
+                    </li>
+                    <li class="discover__item">
+                        <svg class="discover__icon" width="60px" height="60px">
+                            <use href="./img/symbol-defs.svg#czech-republic"></use>
+                        </svg>
+                        <div class="discover__box">
+                            <h4 class="discover__caption">Чеська кухня</h4>
+                            <p class="discover__text">Смачні страви, такі як гуляш, шніцель і традиційна випічка, залишать відвідувачам чудові враження.</p>
+                        </div>
+                    </li>
+                    <li class="discover__item">
+                        <svg class="discover__icon" width="60px" height="60px">
+                            <use href="./img/symbol-defs.svg#usa"></use>
+                        </svg>
+                        <div class="discover__box">
+                            <h4 class="discover__caption">Американська кухня</h4>
+                            <p class="discover__text">Різноманітні смаки, культова класика, як-от гамбургери, хот-доги та барбекю, точно припадуть вам до смаку.</p>
+                        </div>
+                    </li>
+                    <li class="discover__item">
+                        <svg class="discover__icon" width="60px" height="60px">
+                            <use href="./img/symbol-defs.svg#slovakia"></use>
+                        </svg>
+                        <div class="discover__box">
+                            <h4 class="discover__caption">Словацька кухня</h4>
+                            <p class="discover__text">Бринза, галушки, гуляш, шулянс - смачні страви для любителів їжі</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+
+        <section>
+
+            <div class="special-dish container">
+
+                <h3 class="special-dish__title">Фірмові страви</h3>
+                <h2 class="special-dish__header">Кращі рекомендації з меню</h2>
+
+
+                <ul class="special-dish__list">
+                    <li class="special-dish__item">
+                        <img src="./img/appertizer-special-dish.jpg" alt="photo appertizer" class="special-dish__photo">
+
+                        <div class="special-dish__box">
+
+                            <h4 class="special-dish__caption">Салат цезарь</h4>
+
+
+                            <ul class="special-dish__set">
+                                <li class="special-dish-set__item">Зварені в круту,</li>
+                                <li class="special-dish-set__item">Смажена курятина,</li>
+                                <li class="special-dish-set__item">Пекінська капуста & заправка.</li>
+                            </ul>
+
+
+                            <p class="special-dish__price"><span class="special-dish__price--accent">375 грн.</span> /
+                                порція</p>
+
+
+
+
+                        </div>
+
+
+                    </li>
+                    <li class="special-dish__item">
+                        <img src="./img/course-special-dish.jpg" alt="photo appertizer" class="special-dish__photo">
+
+                        <div class="special-dish__box">
+
+                            <h4 class="special-dish__caption">Картопля по-укїнськи</h4>
+
+
+                            <ul class="special-dish__set">
+                                <li class="special-dish-set__item">Смажена картопля,</li>
+                                <li class="special-dish-set__item">Свинячий шашлик & сир,</li>
+                                <li class="special-dish-set__item">Салат з свіжих овочів</li>
+
+                            </ul>
+
+
+                            <p class="special-dish__price"><span class="special-dish__price--accent">510 грн.</span> /
+                                порція</p>
+
+
+
+
+                        </div>
+
+
+                    </li>
+                    <li class="special-dish__item">
+                        <img src="./img/desert-special-dish.jpg" alt="photo appertizer" class="special-dish__photo">
+
+                        <div class="special-dish__box">
+
+                            <h4 class="special-dish__caption">Морозиво з фруктами</h4>
+
+
+                            <ul class="special-dish__set">
+                                <li class="special-dish-set__item">Ванільне і фруктове морозиво</li>
+                                <li class="special-dish-set__item">Свіжі овочі, шоколад</li>
+                                <li class="special-dish-set__item">Печиво, зефір</li>
+                            </ul>
+
+
+                            <p class="special-dish__price"><span class="special-dish__price--accent">190 грн.</span> /
+                                порція</p>
+
+
+
+
+                        </div>
+
+
+                    </li>
+                </ul>
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+        <section>
+            <div class="special-menu container">
+
+                <h2 class="phantom">Найкраще з меню</h2>
+
+                <ul class="special-menu__list">
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Український борщ</h4>
+                            <p class="special-menu__price">135 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Смачний буряковий суп, що демонструє культурну спадщину України.
+                        </p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Пельмені</h4>
+                            <p class="special-menu__price">205 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Пельмені з м'ясом, подаються зі сметаною</p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Свинячий шашлик</h4>
+                            <p class="special-menu__price">160 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Маринований шашлик зі свинини, смачна українська страва на мангалі.</p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Стейк по-американськи з картоплею</h4>
+                            <p class="special-menu__price">305 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Смакове поєднання соковитого стейка та ідеально прожареної картоплі уособлює суть американської кухні..</p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Картопля фрі зі смаженим сиром</h4>
+                            <p class="special-menu__price">230 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Хрустка картопля фрі з плавленим смаженим сиром, райська насолода для любителів сиру та картоплі.</p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Крокети з курячою відбивною</h4>
+                            <p class="special-menu__price">260 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Ідеальне поєднання для повноцінного перекусу.</p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">М'ясна суміш з тостами</h4>
+                            <p class="special-menu__price">170 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Солона суміш приправленого м'яса з підсмаженим хлібом.</p>
+                    </li>
+                    <li class="special-menu__item">
+                        <div class="special-menu__box">
+                            <h4 class="special-menu__title">Домашня ковбаса</h4>
+                            <p class="special-menu__price">155 грн.</p>
+
+                        </div>
+                        <p class="special-menu__text">Смачні ковбаски, виготовлені з любов'ю та якісними інгредієнтами.</p>
+                    </li>
+                </ul>
+                <ul class="special-menu__list-photo">
+                    <li class="speial=menu__item-photo"><img src="./img/menu-spcial-dish.jpg" alt="Menu"
+                            class="special-menu__photo special-menu__photo--first"></li>
+                    <li class="speial=menu__item-photo"><img src="./img/menu-special-dish.jpg" alt="Menu"
+                            class="special-menu__photo special-menu__photo--second"></li>
+                </ul>
+
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <div class="footer">
+                <div class="footer__box"><a href="#logo" class="footer__logo">DANLAR</a>
+                    <p class="footer__text">Шановні відвідувачі! Раді вітати Вас на сайті нашого ресторану. Щоб бути в курсі останніх новин, спеціальних пропозицій
+                    та подій, ми запрошуємо вас відвідати наші соціальні мережі та підписатися.
+                    </p>
+                    <ul class="footer__social-list">
+                        <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px"
+                                    height="40px" class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#facebook"></use>
+                                </svg></a></Li>
+                        <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px"
+                                    height="40px" class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#twitter"></use>
+                                </svg></a></Li>
+                        <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px"
+                                    height="40px" class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#instagram"></use>
+                                </svg></a></Li>
+                        <Li class="footer__social-item"><a href="" class="footer__social-link"><svg width="40px"
+                                    height="40px" class="footer__icon">
+                                    <use href="./img/symbol-defs.svg#youtube"></use>
+                                </svg></a></Li>
+                    </ul>
+                </div>
+                <div class="footer__address">
+                    <h2 class="footer__title">Знайдете нас!</h2>
+                    <address>
+                        <ul class="footer__address-list">
+                            <li class="footer__address-item"><a
+                                    href="https://www.google.com/maps/place/Restaurace+DANLAR/@51.3647365,7.0081306,7z/data=!4m10!1m2!2m1!1sdanlar!3m6!1s0x47093f2db58b5997:0x1e94c5dc0636892c!8m2!3d50.7723456!4d14.7632315!15sCgZkYW5sYXKSAQpyZXN0YXVyYW504AEA!16s%2Fg%2F11kp_w0sbn?entry=ttu"
+                                    class="footer__address-link" target="_blank"><span
+                                        class="footer__address-text">L.</span> Jablonné v Podještědí 195, 471 25
+                                    Jablonné v Podještědí</a></li>
+                            <li class="footer__address-item"><a href="tel:+420722908422"
+                                    class="footer__address-link"><span class="footer__address-text">P.</span> +420 722
+                                    908 422</a></li>
+                            <li class="footer__address-item"><a href="tel:+420776123492"
+                                    class="footer__address-link"><span class="footer__address-text">P.</span> +420 776
+                                    123 492</a></li>
+                            <li class="footer__address-item"><a href="mailto:volodymyrrishko@email.cz"
+                                    class="footer__address-link"><span class="footer__address-text">E.</span>
+                                    volodymyrrishko@email.cz</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer src="./js/script-language.js"></script>
+
 </body>
+
 </html>

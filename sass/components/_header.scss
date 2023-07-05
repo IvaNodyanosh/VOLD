@@ -1,38 +1,24 @@
 .header {
     
     display: flex;
+    align-items: baseline;
+
+    position: absolute;
+    justify-content: space-between;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, var(--text-color-second) 24.43%, rgba(11, 19, 21, 0) 100%);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-            background: linear-gradient(180deg, var(--text-color-second) 24.43%, rgba(11, 19, 21, 0) 100%);
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
+
+
     
-
-
-    &__language {
-        
-        margin-left: auto;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        color: var(--color-text);
-        cursor: pointer;
-
-        @include animation(color);
-        
-
-        &:hover, &:focus{color: var(--logo-color);}
-    
-    }
 
     &__logo {
-        margin-top: 50px;
         font-family: 'ITC Clearface Std', serif;
         font-weight: bold;
         color: var(--logo-color);
@@ -45,3 +31,101 @@
 }
 
 
+.nav{
+    display: flex;
+    width: auto;
+    
+
+
+    &__language-box{
+        width: 150px;
+        border-radius: 5px;
+        display: block;
+        position: relative;
+
+        @include mq(mob-min){
+            width: 110px;
+        }
+
+
+    }
+
+    &__list-language{
+        background-color: var(--background-color-block);
+        padding-bottom: 15px;
+    
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+
+        z-index: 1;
+    }
+
+    &__button{
+        display: block;
+        background-color: #0b0e11;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--color-text);
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        @include animation(color);
+        &:hover, &:focus{color: var(--logo-color);}
+    }
+
+
+    &__link-language{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--color-text);
+        cursor: pointer;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+
+        @include animation(color);
+        
+
+        &:hover, &:focus{color: var(--logo-color);}
+    }
+
+    &__link-language--current{
+        position: relative;
+
+        &::after{
+            content: "";
+            background-color: #D7B686;
+            display: block;
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    &__item-language{
+
+        text-align: center;
+
+        
+
+    }
+}
+
+
+.open{
+    opacity: 1;
+    pointer-events: all;
+    @include animation(opacity);
+}
